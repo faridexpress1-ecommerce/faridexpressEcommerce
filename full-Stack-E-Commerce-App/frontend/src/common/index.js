@@ -1,5 +1,5 @@
 
-const backendDomain = process.env.REACT_APP_BACKEND_URL 
+const backendDomain = process.env.REACT_APP_BACKEND_URL || "https://faridexpress-ecommerce-git-main-faridexpress-projects.vercel.app/"
 
 
 const summaryApi = {
