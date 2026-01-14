@@ -42,7 +42,7 @@ const app = express();
 app.use(cors({
     origin: [
         process.env.FRONTEND_URL, 
-        "https://ecommerce-31na.vercel.app" // Your frontend live URL
+        
     ],
     credentials: true
 }));
