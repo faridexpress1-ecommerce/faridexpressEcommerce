@@ -12,7 +12,7 @@ const app = express();
 // 1. DYNAMIC CORS: This allows BOTH your local testing and your live Vercel site
 const allowedOrigins = [
     "http://localhost:3000",
-    "https://ecommerce-31na.vercel.app", // Your specific frontend Vercel URL
+  // Your specific frontend Vercel URL
     process.env.FRONTEND_URL 
 ];
 
