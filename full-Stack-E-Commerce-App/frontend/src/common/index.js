@@ -1,4 +1,6 @@
-const backendDomain = "https://faridexpress-ecommerce.vercel.app"
+
+const backendDomain = process.env.REACT_APP_BACKEND_URL
+
 
 const summaryApi = {
     signUP : {
