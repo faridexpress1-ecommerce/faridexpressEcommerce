@@ -131,7 +131,7 @@ const AdminEditProduct = ({
              required
              />
 
-            <label htmlFor='category' className='mt-3'> Category :</label>
+            <label htmlFor='category' className='mt-4'> Category :</label>
             <select 
             required 
             value={data.category}
