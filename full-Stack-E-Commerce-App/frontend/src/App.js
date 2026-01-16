@@ -9,7 +9,7 @@ import summaryApi from './common';
 import Context from './context';
 import { useDispatch } from 'react-redux';
 import { setUserDetails } from './store/userSlice';
-import css from './App.css';
+
 
 function App() {
    const disPatch = useDispatch()

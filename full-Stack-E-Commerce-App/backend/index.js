@@ -9,22 +9,16 @@ const router = require('./routes')
 const app = express()
 
 app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "https://faridexpress-ecommerce-x933.vercel.app"
-  ],
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"]
-}));
-
+    origin : process.env.FRONTEND_URL,
+    credentials : true
+}))
 
 app.use(express.json())
 app.use(cookieParser())
 
 app.use("/api",router)
 
-const PORT = process.env.PORT || 8080
-
+const PORT = 8080 || process.env.PORT
 
 
 connectDB().then(()=>{
